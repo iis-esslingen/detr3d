@@ -243,4 +243,5 @@ def main():
 
 
 if __name__ == '__main__':
+    torch.multiprocessing.set_start_method("fork", force=True) # avoids a mysterious pickel errors
     main()
